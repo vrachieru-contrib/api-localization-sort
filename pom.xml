@@ -34,10 +34,10 @@
   <packaging>jar</packaging>
   <version>1.0</version>
   <dependencies>
-<dependency>
- <groupId>org.xwiki.commons</groupId>
- <artifactId>xwiki-commons-script</artifactId>
- <version>${commons.version}</version>
-</dependency>
+    <dependency>
+      <groupId>org.xwiki.commons</groupId>
+      <artifactId>xwiki-commons-script</artifactId>
+      <version>${commons.version}</version>
+   </dependency>
  </dependencies>
 </project>
