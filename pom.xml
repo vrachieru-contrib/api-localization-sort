@@ -28,16 +28,42 @@
     <version>4.5.3</version>
   </parent>
   <groupId>org.xwiki.contrib</groupId>
-  <artifactId>localization-sort</artifactId>
-  <name>Localization sort</name>
+  <artifactId>api-localization-sort</artifactId>
+  <name>Localization Sort Script Service</name>
   <description>Sorting service which takes into account accented letters and location specific sort rules</description>
   <packaging>jar</packaging>
   <version>1.0</version>
+  <scm>
+    <connection>scm:git:git://github.com/xwiki-contrib/api-localization-sort.git</connection>
+    <developerConnection>scm:git:git@github.com:xwiki-contrib/api-localization-sort.git</developerConnection>
+    <url>https://github.com/xwiki-contrib/api-localization-sort</url>
+  </scm>
+  <developers>
+    <developer>
+      <id>vrachieru</id>
+      <name>Victor Rachieru</name>
+    </developer>
+  </developers>
+  <properties>
+    <!-- Old names of this module used for retro compatibility when resolving dependencies of old extensions -->
+    <xwiki.extension.features>vrachieru:localization-sort</xwiki.extension.features>
+  </properties>
+  <issueManagement>
+    <system>jira</system>
+    <url>http://jira.xwiki.org/browse/XLOCALSORT</url>
+  </issueManagement>
   <dependencies>
     <dependency>
       <groupId>org.xwiki.commons</groupId>
       <artifactId>xwiki-commons-script</artifactId>
       <version>${commons.version}</version>
-   </dependency>
- </dependencies>
+    </dependency>
+  </dependencies>
+  <distributionManagement>
+    <repository>
+      <id>xwiki-staging</id>
+      <name>XWiki Staging Repository</name>
+      <url>http://nexus.xwiki.org/nexus/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 </project>
